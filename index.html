@@ -1,0 +1,117 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analisis Regresi Y dan GLU</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Analisis Statistik Deskriptif Variabel Y dan GLU</h1>
+      <p><strong>Nama:</strong> Michael Amazone</p>
+      <p><strong>NIM:</strong> 049004287</p>
+    <h2>1. Visualisasi Data Bivariat</h2>
+    <p>
+      Scatter plot digunakan untuk melihat hubungan antara variabel perkembangan penyakit setelah satu tahun (Y)
+      dengan kadar gula darah (GLU).
+    </p>
+
+    <div class="scatter-placeholder">
+      <div style="font-weight:700; color:#dfe9ff; margin-bottom:10px;">Scatter Plot Y vs GLU</div>
+      <img src="gambar.png" alt="Scatter Plot Y vs GLU">
+    </div>
+
+    <h2>2. Model Persamaan Regresi Linear dan Estimasi</h2>
+
+    <p>Berdasarkan hasil analisis regresi linear sederhana diperoleh model:</p>
+
+    <div class="formula">
+      Ŷ = -134.723 + 3.189(GLU)
+    </div>
+
+    <p>
+      Keterangan:
+      <br>• Ŷ = Nilai prediksi perkembangan penyakit
+      <br>• a = Konstanta regresi
+      <br>• b = Koefisien regresi variabel GLU
+    </p>
+
+    <div class="note">
+      Nilai koefisien determinasi (R²) sebesar <b>0.258</b> digunakan untuk melihat seberapa besar pengaruh variabel GLU terhadap Y.
+    </div>
+
+    <h2>3. Rumusan Masalah Asosiatif</h2>
+
+    <p>
+      “Apakah terdapat hubungan antara kadar gula darah (GLU) dengan perkembangan penyakit setelah satu tahun (Y)?”
+    </p>
+
+    <h2>4. Ulasan Model dan Hasil</h2>
+
+    <p>
+      Berdasarkan scatter plot, hubungan antara variabel GLU dan Y cenderung menunjukkan pola positif.
+      Artinya, peningkatan kadar gula darah dapat diikuti oleh peningkatan perkembangan penyakit.
+      Namun, persebaran data yang cukup lebar menunjukkan bahwa hubungan tersebut tidak terlalu kuat.
+    </p>
+
+    <p>
+      Nilai R² sebesar <b>0.258</b> menunjukkan bahwa variabel GLU hanya mampu menjelaskan sebagian kecil variasi perkembangan penyakit.
+      Dengan demikian, kemungkinan terdapat faktor lain seperti AGE, LDL, HDL, TCH, dan LTG yang juga memengaruhi variabel Y.
+    </p>
+
+    <h2>5. Statistik Deskriptif</h2>
+
+    <table>
+      <tr>
+        <th>Statistik</th>
+        <th>Y</th>
+        <th>GLU</th>
+      </tr>
+      <tr>
+        <td>Count</td>
+        <td>100.000</td>
+        <td>100.000</td>
+      </tr>
+      <tr>
+        <td>Mean</td>
+        <td>160.220</td>
+        <td>92.500</td>
+      </tr>
+      <tr>
+        <td>Std</td>
+        <td>77.831</td>
+        <td>12.401</td>
+      </tr>
+      <tr>
+        <td>Min</td>
+        <td>25.000</td>
+        <td>66.000</td>
+      </tr>
+      <tr>
+        <td>25%</td>
+        <td>96.000</td>
+        <td>84.750</td>
+      </tr>
+      <tr>
+        <td>50% (Median)</td>
+        <td>141.500</td>
+        <td>91.500</td>
+      </tr>
+      <tr>
+        <td>75%</td>
+        <td>221.250</td>
+        <td>98.250</td>
+      </tr>
+      <tr>
+        <td>Max</td>
+        <td>336.000</td>
+        <td>124.000</td>
+      </tr>
+    </table>
+
+  </div>
+</body>
+</html>
+

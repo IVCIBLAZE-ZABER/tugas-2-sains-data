@@ -1,0 +1,109 @@
+
+
+:root{
+  --bg:#0b1220;
+  --card:#111a2e;
+  --text:#e7eefc;
+  --muted:#b9c6e4;
+  --accent:#4ea1ff;
+  --accent2:#38e3a5;
+  --border: rgba(255,255,255,.12);
+}
+
+*{ box-sizing:border-box; }
+
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: radial-gradient(1200px 600px at 10% 0%, rgba(78,161,255,.25), transparent 60%),
+              radial-gradient(900px 500px at 90% 10%, rgba(56,227,165,.18), transparent 55%),
+              var(--bg);
+  color:var(--text);
+  line-height:1.5;
+}
+
+.container{
+  max-width: 980px;
+  margin: 32px auto;
+  padding: 0 18px;
+}
+
+h1{
+  font-size: 28px;
+  margin: 0 0 18px;
+  letter-spacing:.2px;
+}
+
+h2{
+  font-size: 18px;
+  margin: 18px 0 10px;
+  color: #dfe9ff;
+}
+
+p{ color: var(--muted); margin: 8px 0; }
+
+.scatter-placeholder{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+
+.scatter-placeholder img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,.10);
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+
+.formula{
+  background: rgba(78,161,255,.12);
+  border: 1px solid rgba(78,161,255,.25);
+  border-radius: 12px;
+  padding: 14px 16px;
+  font-size: 20px;
+  color: #eaf3ff;
+  overflow:auto;
+  margin-bottom: 8px;
+}
+
+.note{
+  background: rgba(56,227,165,.10);
+  border: 1px solid rgba(56,227,165,.22);
+  border-radius: 12px;
+  padding: 12px 14px;
+  color: #c9ffe9;
+  margin-top: 10px;
+}
+
+table{
+  width:100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow:hidden;
+}
+
+th, td{
+  padding: 12px 12px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  text-align:left;
+}
+
+th{
+  background: rgba(255,255,255,.06);
+  color: #dfe9ff;
+  font-weight: 700;
+}
+
+tr:last-child td{ border-bottom:none; }
+
+td:nth-child(2), td:nth-child(3){ color: #e7eefc; }
+
